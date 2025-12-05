@@ -1,0 +1,28 @@
+# --- Dados Pesados (Não sobem para o GitHub) ---
+*.csv
+*.xls
+*.xlsx
+*.parquet
+data/
+dataset.csv
+
+# --- Lixo do Sistema Operacional ---
+.DS_Store
+Thumbs.db
+
+# --- Arquivos Temporários do Python e Jupyter ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+.env
+
+# --- Volumes do Docker (Dados do MinIO/Mongo) ---
+# Ignora pastas criadas pelo docker para salvar dados
+minio_data/
+mongo-data/
+datalake_data/
+spark-warehouse/
+metastore_db/
+derby.log
